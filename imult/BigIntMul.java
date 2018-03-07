@@ -197,7 +197,14 @@ public class BigIntMul {
 //    File f = new File("koMulOptTimes.txt");
 //    getRunTimes(new Unsigned(1), new Unsigned(10), new Unsigned(90), f, true);
 
-    File ratios = new File("ratios.txt");
-    getRatios(new Unsigned(1), new Unsigned(10), new Unsigned(90), ratios, new Unsigned(120));
+//    File ratios = new File("ratios.txt");
+//    getRatios(new Unsigned(1), new Unsigned(10), new Unsigned(90), ratios, new Unsigned(120));
+
+    File runtimes = new File("koMulOptTimes.txt");
+    try {
+      plotRunTimes(0.002689389340899652, 0.0022324711834897123, runtimes);
+    } catch (Exception e) {
+      System.out.println(e);
+    }
   }
 }
