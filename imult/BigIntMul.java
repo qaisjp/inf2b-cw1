@@ -194,9 +194,10 @@ public class BigIntMul {
 
 
     //write your code here to generate the plot
-    File f = new File("koMulOptTimes.txt");
-    getRunTimes(new Unsigned(1), new Unsigned(10), new Unsigned(90), f, true);
+//    File f = new File("koMulOptTimes.txt");
+//    getRunTimes(new Unsigned(1), new Unsigned(10), new Unsigned(90), f, true);
 
-//    getRatios(new Unsigned(1), new Unsigned(10), new Unsigned(90), ratios, );
+    File ratios = new File("ratios.txt");
+    getRatios(new Unsigned(1), new Unsigned(10), new Unsigned(90), ratios, new Unsigned(120));
   }
 }
