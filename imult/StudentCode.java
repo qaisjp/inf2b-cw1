@@ -94,8 +94,8 @@ public class StudentCode {
         BigInt a1 = a.split(lowerNum, n);
         BigInt b1 = b.split(lowerNum, n);
 
-        BigInt l = koMul(a0, b0);
-        BigInt h = koMul(a1, b1);
+        BigInt l = koMulOpt(a0, b0);
+        BigInt h = koMulOpt(a1, b1);
 
         BigInt m = sub(koMulOpt(
                 add(a0, a1),
